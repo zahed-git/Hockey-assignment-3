@@ -10,9 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>\
 
     <!-- fontAwosome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,6 +30,7 @@
 
 <body>
     <header>
+
         <!-- navigation bar  -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -73,7 +72,7 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <i class="fa-thin fa-magnifying-glass"></i>
+                <i class="fa fa-search ml-2"> </i>
                 <a class="btn bg-[#FF4240] text-white px-6">Get Ticket</a>
             </div>
         </div>
@@ -123,18 +122,252 @@
     <main>
         <!-- professional Hocky start -->
         <section class="container mt-24 mx-auto ">
-            <div class=" text-center mx-auto">
-                <div class="divider"></div>
+            <div class=" text-center mx-auto border-dashed border-2 border-slate-400 border-x-0">
+
                 <h1 class="font-extrabold text-4xl pt-8">Professional Hockeys Club</h1>
                 <p class=" text-[#13131899] mt-6 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
                     turpis
                     placerat <br> dolor. Purus urna in sit nullam proin.</p>
-                <div class="divider"></div>
+
             </div>
-            <div class="grid"></div>
+            <!-- loding bars -->
+            <div class=" mt-12  grid gap-8 grid-cols-1 lg:grid-cols-4">
+                <!-- loading bar- first   -->
+                <div class="text-center">
+                    <div class="radial-progress text-red-400  border-[#E7E7E8]" style="--value:87;" role="progressbar">
+                        87%</div>
+                    <h1 class="text-2xl font-extrabold mt-[24px]">Prayer Facility</h1>
+                    <p class="mt-[16px] opacity-60 text-base">Amet consectetur. Condimentum dignissim adipiscing </p>
+                </div>
+                <!-- loading bar- second   -->
+                <div class="text-center">
+                    <div class="radial-progress text-lime-500  border-[#E7E7E8]" style="--value:95;" role="progressbar">
+                        95%</div>
+                    <h1 class="text-2xl font-extrabold mt-[24px]">Prayer Facility</h1>
+                    <p class="mt-[16px] opacity-60 text-base">Amet consectetur. Condimentum dignissim adipiscing </p>
+                </div>
+                <!-- loading bar- third   -->
+                <div class="text-center">
+                    <div class="radial-progress text-yellow-400 border-[#E7E7E8]" style="--value:90;"
+                        role="progressbar">
+                        90%</div>
+                    <h1 class="text-2xl font-extrabold mt-[24px]">Prayer Facility</h1>
+                    <p class="mt-[16px] opacity-60 text-base">Amet consectetur. Condimentum dignissim adipiscing </p>
+                </div>
+                <!-- loading bar- fourth   -->
+                <div class="text-center">
+                    <div class="radial-progress text-blue-500  border-[#E7E7E8]" style="--value:80;" role="progressbar">
+                        80%</div>
+                    <h1 class="text-2xl font-extrabold mt-[24px]">Prayer Facility</h1>
+                    <p class="mt-[16px] opacity-60 text-base">Amet consectetur. Condimentum dignissim adipiscing </p>
+                </div>
         </section>
 
-        <!-- professional Hocky end -->
+        <!-- program section -->
+        <section class="container mt-24 mx-auto ">
+            <div class=" text-center mx-auto border-dashed border-2 border-slate-400 border-x-0">
+
+                <h1 class="font-extrabold text-4xl pt-8">Program Sections</h1>
+                <p class=" text-[#13131899] mt-6 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat <br> dolor. Purus urna in sit nullam proin.</p>
+
+            </div>
+            <!-- program photos -->
+            <div class="mt-12  grid gap-3 grid-cols-1 lg:grid-cols-2">
+                <!-- first photo -->
+                <div class="text-start justify-center mx-auto relative rounded-2xl ">
+                    <img src="./images/2.png" alt="">
+                    <div class="w-[459px] absolute top-20 left-10">
+                        <h1 class="text-2xl font-extrabold text-white">Prayer Facility</h1>
+                        <p class="mt-[16px] text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in. </p>
+                        <a class="mt-6 btn bg-[#FF4240] text-white px-6">Register Now</a>
+                    </div>
+                </div>
+                <!-- second photo -->
+                <div class="text-start justify-center mx-auto relative rounded-2xl">
+                    <img src="./images/3.png" alt="">
+                    <div class="w-[459px] absolute top-20 left-10">
+                        <h1 class="text-2xl font-extrabold text-white">Teenager Program</h1>
+                        <p class="mt-[16px] text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in. </p>
+                        <a class="mt-6 btn bg-[#FF4240] text-white px-6">Register Now</a>
+                    </div>
+                </div>
+                <!-- third photo -->
+                <div
+                    class="text-start justify-center mx-auto relative sm:max-w-[640px] lg:max-w-[1180px] sm:max-h-[244px] lg:max-h-[450px] lg:col-span-2 rounded-2xl ">
+                    <img class="w-full h-full" src="./images/4.png" alt="">
+                    <div class="w-[459px] absolute top-10 lg:top-52 left-10">
+                        <h1 class="text-2xl font-extrabold text-white">professional Program</h1>
+                        <p class="mt-[16px] text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                            elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in. </p>
+                        <a class="mt-6 btn bg-[#FF4240] text-white px-6">Register Now</a>
+                    </div>
+                </div>
+
+
+                <!-- photos End -->
+            </div>
+        </section>
+        <!-- new Products and carts -->
+        <section class="container mt-24 mx-auto ">
+            <div class=" text-center mx-auto border-dashed border-2 border-slate-400 border-x-0">
+
+                <h1 class="font-extrabold text-4xl pt-8">Our New Products</h1>
+                <p class=" text-[#13131899] mt-6 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis
+                    placerat <br> dolor. Purus urna in sit nullam proin.</p>
+
+            </div>
+            <!-- all carts -->
+            <div class="mt-12 grid gap-60 lg:gap-6 grid-cols-1 lg:grid-cols-2">
+                <!-- CART DIV -->
+                <!-- first cart -->
+                <div
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    <div class="w-[180px] h-[172px] mx-auto"><img src="./images/5.png" alt=""> </div>
+                    <div class="text-start ">
+                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-light fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <h1 class="mt-[13px] text-[20px] font-bold">World Cup Flags Football</h1>
+                        <p class="mt[12px]">Dolor sit amet consectetur. Ut urna <br> diam quis sagittis.</p>
+                        <div class=" lg:flex justify-between ">
+                            <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00</p>
+                            <p class="mt-[16px] tracking-tighter">
+                                <i class="fa-light fa-cart-shopping"></i>
+                                Delivery Fee : Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- second cart -->
+                <div
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    <div class="w-[180px] h-[172px] mx-auto"><img src="./images/6.png" alt=""> </div>
+                    <div class="text-start ">
+                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-light fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <h1 class="mt-[13px] text-[20px] font-bold">World Cup Flags Football</h1>
+                        <p class="mt[12px]">Dolor sit amet consectetur. Ut urna <br> diam quis sagittis.</p>
+                        <div class=" lg:flex justify-between ">
+                            <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00</p>
+                            <p class="mt-[16px] tracking-tighter">
+                                <i class="fa-light fa-cart-shopping"></i>
+                                Delivery Fee : Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- third cart -->
+                <div
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    <div class="w-[180px] h-[172px] mx-auto"><img src="./images/7.png" alt=""> </div>
+                    <div class="text-start ">
+                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-light fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <h1 class="mt-[13px] text-[20px] font-bold">World Cup Flags Football</h1>
+                        <p class="mt[12px]">Dolor sit amet consectetur. Ut urna <br> diam quis sagittis.</p>
+                        <div class=" lg:flex justify-between ">
+                            <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00</p>
+                            <p class="mt-[16px] tracking-tighter">
+                                <i class="fa-light fa-cart-shopping"></i>
+                                Delivery Fee : Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- fourth cart -->
+                <div
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    <div class="w-[180px] h-[172px] mx-auto"><img src="./images/8.png" alt=""> </div>
+                    <div class="text-start ">
+                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-light fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <h1 class="mt-[13px] text-[20px] font-bold">World Cup Flags Football</h1>
+                        <p class="mt[12px]">Dolor sit amet consectetur. Ut urna <br> diam quis sagittis.</p>
+                        <div class=" lg:flex justify-between ">
+                            <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00</p>
+                            <p class="mt-[16px] tracking-tighter">
+                                <i class="fa-light fa-cart-shopping"></i>
+                                Delivery Fee : Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- fifth cart -->
+                <div
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    <div class="w-[180px] h-[172px] mx-auto"><img src="./images/9.png" alt=""> </div>
+                    <div class="text-start ">
+                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-light fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <h1 class="mt-[13px] text-[20px] font-bold">World Cup Flags Football</h1>
+                        <p class="mt[12px]">Dolor sit amet consectetur. Ut urna <br> diam quis sagittis.</p>
+                        <div class=" lg:flex justify-between ">
+                            <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00</p>
+                            <p class="mt-[16px] tracking-tighter">
+                                <i class="fa-light fa-cart-shopping"></i>
+                                Delivery Fee : Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- sixth cart -->
+                <div
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    <div class="w-[180px] h-[172px] mx-auto"><img src="./images/10.png" alt=""> </div>
+                    <div class="text-start ">
+                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
+                            <p>5.0</p>
+                            <i class="fa-light fa-eye"></i>
+                            <p>20</p>
+                            <i class="fa-regular fa-heart"></i>
+                            <p>200</p>
+                        </div>
+                        <h1 class="mt-[13px] text-[20px] font-bold">World Cup Flags Football</h1>
+                        <p class="mt[12px]">Dolor sit amet consectetur. Ut urna <br> diam quis sagittis.</p>
+                        <div class=" lg:flex justify-between ">
+                            <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00</p>
+                            <p class="mt-[16px] tracking-tighter">
+                                <i class="fa-light fa-cart-shopping"></i>
+                                Delivery Fee : Free
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     <footer></footer>
 </body>
