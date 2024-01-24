@@ -32,7 +32,7 @@
     <header>
 
         <!-- navigation bar  -->
-        <div class="navbar bg-base-100">
+        <div class=" navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -72,50 +72,64 @@
                 </ul>
             </div>
             <div class="navbar-end">
-                <i class="fa fa-search ml-2 text-[#89898B]"> </i>
+                <i class="  fa fa-search ml-2 text-[#89898B] text-opacity-0 lg:text-opacity-50"> </i>
+
                 <a class="btn bg-[#FF4240] text-white mx-6">Get Ticket</a>
             </div>
         </div>
         <!-- banner        -->
-        <div class="relative">
-            <!-- from daisyUI start-->
-            <div class="carousel w-full z-10">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
+        <div class=" container flex content-center mx-auto">
+            <div class="relative mx-0 w-full object-contain">
+                <!-- from daisyUI start-->
+                <div class="sm:max-w-[350px] lg:max-w-[1200px] mx-auto">
+                    <div class=" carousel w-full z-10 mx-auto">
+                        <div id="slide1" class="carousel-item relative w-full">
+                            <img src="./Images/1.png" class="w-full" />
+                            <div class="absolute sm:left-2/4 lg:left-10 top-3/4 ">
+                                <a href="#slide4" class="btn btn-circle bg-black text-white ml-28 lg:ml-8">❮</a>
+                                <a href="#slide2" class="btn btn-circle ml-6 bg-black text-white">❯</a>
+                            </div> 
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                            <img src="./Images/1.png" class="w-full" />
+                            <div class="absolute sm:left-3/4 lg:left-10  top-3/4">
+                                <a href="#slide1" class="btn btn-circle bg-black text-white ml-28 lg:ml-8">❮</a>
+                                <a href="#slide3" class="btn btn-circle ml-6 bg-black text-white">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                            <img src="./Images/1.png" class="w-full" />
+                            <div class="absolute sm:left-3/4 lg:left-10  top-3/4">
+                                <a href="#slide2" class="btn btn-circle bg-black text-white ml-28 lg:ml-8">❮</a>
+                                <a href="#slide4" class="btn btn-circle ml-6 bg-black text-white">❯</a>
+                            </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                            <img src="./Images/1.png" class="w-full" />
+                            <div class="absolute sm:left-3/4 lg:left-10  top-3/4">
+                                <a href="#slide3" class="btn btn-circle bg-black text-white ml-28 lg:ml-8">❮</a>
+                                <a href="#slide1" class="btn btn-circle ml-6 bg-black text-white">❯</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+
+                <!-- from daisyUI End-->
+                <div
+                    class="  sm:w-[350px] sm:flex mx-auto lg:w-[570px] lg:absolute bg-[#131318] sm:p-4  lg:p-8 w-[566px] rounded-xl left-1/2 top-2/4 p-4 ">
+                    <div>
+                        <h1
+                            class="text-white font-bold sm:text-[14px] lg:text-2xl  tracking-tighter lg:tracking-normal">
+                            Meet all the heroes from the field</h1>
+                        <p
+                            class="text-white sm:text-[12px] lg:text-[16px] mt-1 lg:mt-4  opacity-60 tracking-tighter lg:tracking-normal">
+                            Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                            <br> turpis placerat dolor. Purus urna in
+                            sit nullam proin.
+                        </p>
                     </div>
                 </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" class="carousel-item relative w-full">
-                    <img src="./Images/1.png" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-            </div>
-            <!-- from daisyUI End-->
-            <div class="absolute bg-[#131318]  p-8 w-[566px] rounded-2xl right-12 bottom-12">
-                <h1 class="text-white font-bold text-2xl">Meet all the heroes from the field</h1>
-                <p class="text-white mt-4 opacity-60">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
-                    <br> turpis placerat dolor. Purus urna in
-                    sit nullam proin.
-                </p>
+
             </div>
         </div>
     </header>
@@ -185,9 +199,10 @@
                 <!-- first photo -->
                 <div class="text-start justify-center mx-auto relative rounded-2xl ">
                     <img src="./images/2.png" alt="">
-                    <div class="w-[459px] absolute top-20 left-10">
-                        <h1 class="text-2xl font-extrabold text-white">Prayer Facility</h1>
-                        <p class="mt-[16px] text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
+                    <div class="w-[459px] absolute left-0 top-0 lg:top-1/4 pl-6">
+                        <h1 class="text-2xl font-extrabold text-white ">Prayer Facility</h1>
+                        <p class="mt-[16px] text-white text-wrap">Dolor sit amet consectetur. Ut urna diam quis
+                            sagittis. Elit
                             elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
                             congue sed et in. </p>
                         <a class="mt-6 btn bg-[#FF4240] text-white px-6">Register Now</a>
@@ -196,7 +211,7 @@
                 <!-- second photo -->
                 <div class="text-start justify-center mx-auto relative rounded-2xl">
                     <img src="./images/3.png" alt="">
-                    <div class="w-[459px] absolute top-20 left-10">
+                    <div class="w-[459px] absolute left-0 top-0 lg:top-1/4 pl-6">
                         <h1 class="text-2xl font-extrabold text-white">Teenager Program</h1>
                         <p class="mt-[16px] text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                             elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
@@ -207,8 +222,9 @@
                 <!-- third photo -->
                 <div
                     class="text-start justify-center mx-auto relative sm:max-w-[640px] lg:max-w-[1180px] sm:max-h-[244px] lg:max-h-[450px] lg:col-span-2 rounded-2xl ">
-                    <img class="w-full h-full" src="./images/4.png" alt="">
-                    <div class="w-[459px] absolute top-10 lg:top-52 left-10">
+                    <div></div>
+                    <img class="w-full h-full  object-cover " src="./images/4.png" alt="">
+                    <div class="w-[459px] absolute left-0 top-0 lg:top-1/4 pl-6 leading-4 lg:leading-6">
                         <h1 class="text-2xl font-extrabold text-white">professional Program</h1>
                         <p class="mt-[16px] text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit
                             elit enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
@@ -233,13 +249,13 @@
 
             </div>
             <!--  product carts -->
-            <div class="mt-12 grid gap-60 lg:gap-6 grid-cols-1 lg:grid-cols-2">
+            <div class="mt-12 grid gap-6 grid-cols-1 lg:grid-cols-2">
                 <!-- CART DIV -->
                 <!-- first cart -->
                 <div
-                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center mx-auto">
                     <div class="w-[180px] h-[172px] mx-auto"><img src="./images/5.png" alt=""> </div>
-                    <div class="text-start ">
+                    <div class="text-start mx-auto">
                         <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
                             <p>5.0</p>
                             <i class="fa-light fa-eye"></i>
@@ -253,7 +269,7 @@
                             <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00
                             </p>
                             <p class="mt-[16px] tracking-tighter">
-                                <i class="fa-light fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 Delivery Fee : Free
                             </p>
                         </div>
@@ -261,10 +277,10 @@
                 </div>
                 <!-- second cart -->
                 <div
-                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center mx-auto">
                     <div class="w-[180px] h-[172px] mx-auto"><img src="./images/6.png" alt=""> </div>
-                    <div class="text-start ">
-                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
+                    <div class="text-start mx-auto">
+                        <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star "></i>
                             <p>5.0</p>
                             <i class="fa-light fa-eye"></i>
                             <p>20</p>
@@ -277,7 +293,7 @@
                             <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00
                             </p>
                             <p class="mt-[16px] tracking-tighter">
-                                <i class="fa-light fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 Delivery Fee : Free
                             </p>
                         </div>
@@ -285,9 +301,9 @@
                 </div>
                 <!-- third cart -->
                 <div
-                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center mx-auto">
                     <div class="w-[180px] h-[172px] mx-auto"><img src="./images/7.png" alt=""> </div>
-                    <div class="text-start ">
+                    <div class="text-start mx-auto">
                         <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
                             <p>5.0</p>
                             <i class="fa-light fa-eye"></i>
@@ -301,7 +317,7 @@
                             <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00
                             </p>
                             <p class="mt-[16px] tracking-tighter">
-                                <i class="fa-light fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 Delivery Fee : Free
                             </p>
                         </div>
@@ -309,9 +325,9 @@
                 </div>
                 <!-- fourth cart -->
                 <div
-                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center mx-auto">
                     <div class="w-[180px] h-[172px] mx-auto"><img src="./images/8.png" alt=""> </div>
-                    <div class="text-start ">
+                    <div class="text-start mx-auto">
                         <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
                             <p>5.0</p>
                             <i class="fa-light fa-eye"></i>
@@ -325,7 +341,7 @@
                             <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00
                             </p>
                             <p class="mt-[16px] tracking-tighter">
-                                <i class="fa-light fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 Delivery Fee : Free
                             </p>
                         </div>
@@ -333,9 +349,9 @@
                 </div>
                 <!-- fifth cart -->
                 <div
-                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center mx-auto">
                     <div class="w-[180px] h-[172px] mx-auto"><img src="./images/9.png" alt=""> </div>
-                    <div class="text-start ">
+                    <div class="text-start mx-auto">
                         <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
                             <p>5.0</p>
                             <i class="fa-light fa-eye"></i>
@@ -349,7 +365,7 @@
                             <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00
                             </p>
                             <p class="mt-[16px] tracking-tighter">
-                                <i class="fa-light fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 Delivery Fee : Free
                             </p>
                         </div>
@@ -357,9 +373,9 @@
                 </div>
                 <!-- sixth cart -->
                 <div
-                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center">
+                    class="card w-[350px] h-[530px] lg:w-[630px] lg:h-[218px] grid  grid-cols-1 lg:grid-cols-2  border-solid border-2 border-slate-100 rounded-2xl p-6  items-center mx-auto">
                     <div class="w-[180px] h-[172px] mx-auto"><img src="./images/10.png" alt=""> </div>
-                    <div class="text-start ">
+                    <div class="text-start mx-auto">
                         <div class="flex justify-start gap-3  mt-1"><i class="fa-solid fa-star"></i>
                             <p>5.0</p>
                             <i class="fa-light fa-eye"></i>
@@ -373,7 +389,7 @@
                             <p class="mt-[16px] text-[16px] text-[#FF4240] font-bold tracking-tighter">Price - $22.00
                             </p>
                             <p class="mt-[16px] tracking-tighter">
-                                <i class="fa-light fa-cart-shopping"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
                                 Delivery Fee : Free
                             </p>
                         </div>
@@ -478,7 +494,7 @@
                     placerat <br> dolor. Purus urna in sit nullam proin.</p>
             </div>
             <!-- FORM sub_section -->
-            <div class="mt-12 grid  lg:gap-6 grid-cols-1 lg:grid-cols-3">
+            <div class="mt-12 grid  gap-6 grid-cols-1 lg:grid-cols-3">
                 <!-- grid div 1st -->
                 <div class="w-[500px] border-2 border-solid border-slate-100 rounded-2xl p-12 ">
                     <!-- first card -->
@@ -509,52 +525,52 @@
                 </div>
                 <!-- grid div 2nd -->
 
-                <div class="col-span-2 ">
+                <div class="col-span-1 lg:col-span-2 max-w-[700px] ml-0 lg:ml-24">
 
-                    <form>
-                        <div class="grid gap-6 mb-6 grid-cols-1 lg:grid-cols-2">
-                            <div>
-                                <label for="first_name"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
-                                        class="font-extrabold">Your name</span></label>
-                                <input type="text" id="first_name"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="enter your name" required>
-                            </div>
-                            <div>
-                                <label for="email"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
-                                        class="font-extrabold">Your email address</span></label>
-                                <input type="email" id="email"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="enter your email" required>
-                            </div>
-                            <div class="mt-8">
-                                <label for="last_name"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
-                                        class="font-extrabold">Subject</span></label>
-                                <input type="text" id="last_name"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="enter your subject" required>
-                            </div>
-                            <div class="mt-8">
-                                <label for="phone"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
-                                        class="font-extrabold">Phone Number</span></label>
-                                <input type="tel" id="phone"
-                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
-                            </div>
-                            <div class="mt-8 col-span-2 ">
-                                <h1 class="font-extrabold">Message</h1>
-                                <textarea placeholder="write your message"
-                                    class="textarea bg-[#13131808]  textarea-lg w-full "></textarea>
-                            </div>
 
-                            <button type="submit"
-                                class="mt-8 text-white bg-[#FF4240] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 col-span-2 font-extrabold">Send
-                                Message</button>
-                    </form>
+                    <div class="grid gap-6  grid-cols-1 lg:grid-cols-2 mx-auto">
+                        <div>
+                            <label for="first_name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
+                                    class="font-extrabold">Your name</span></label>
+                            <input type="text" id="first_name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="enter your name" required>
+                        </div>
+                        <div>
+                            <label for="email"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
+                                    class="font-extrabold">Your email address</span></label>
+                            <input type="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="enter your email" required>
+                        </div>
+                        <div class="mt-8">
+                            <label for="last_name"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
+                                    class="font-extrabold">Subject</span></label>
+                            <input type="text" id="last_name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="enter your subject" required>
+                        </div>
+                        <div class="mt-8">
+                            <label for="phone"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"><span
+                                    class="font-extrabold">Phone Number</span></label>
+                            <input type="tel" id="phone"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                        </div>
+                        <div class="mt-8  col-span-1 lg:col-span-2 ">
+                            <h1 class="font-extrabold">Message</h1>
+                            <textarea placeholder="write your message"
+                                class="textarea bg-[#13131808]  textarea-lg w-full "></textarea>
+                        </div>
+                        <button type="submit"
+                            class="col-span-1 lg:col-span-2 mt-8 text-white bg-[#FF4240] hover:bg-blue-800   rounded-lg text-sm w-full  py-2.5 text-center font-extrabold">
+                            Send Message
+                        </button>
+                    </div>
 
                 </div>
 
@@ -566,10 +582,12 @@
                 <div class="">
                     <h2 class="font-extrabold text-[24px]">social media</h2>
                     <div>
-                        <a  href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
-                        <a class="ml-6" href="https://web.facebook.com/?_rdc=1&_rdr"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="ml-6" href="https://web.facebook.com/?_rdc=1&_rdr"><i
+                                class="fa-brands fa-facebook"></i></a>
                         <a class="ml-6" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="ml-6" href="https://github.com/zahed-git/Hockey-assignment-3/commits/main/"><i class="fa-brands fa-github"></i></a>
+                        <a class="ml-6" href="https://github.com/zahed-git/Hockey-assignment-3/commits/main/"><i
+                                class="fa-brands fa-github"></i></a>
 
                     </div>
                 </div>
@@ -578,56 +596,59 @@
 
     </main>
 
-        <!-- footer start -->
-        <footer class="bg-black mt-32">
+    <!-- footer start -->
+    <footer class="bg-black mt-32">
 
-            <div class="mx-56 ">
-                <div class="footer p-10  text-base-content text-white">
-                    <nav>
-                      <header class="footer-title font-extrabold ">Get In Touch</header> 
-                      <p class="opacity-60">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin.</p>
-                      <div><i class="fa-regular fa-envelope text-red-300"></i><a class="ml-3 link link-hover opacity-60 ">hockeys@support.co</a></div>
-                      <div><i class="fa-solid fa-phone text-red-400"></i><a class="ml-3 link link-hover opacity-60">(+62) 123-321-543</a></div>
-                      
-                      
-                    </nav> 
-                    <nav>
-                      <header class="footer-title font-extrabold">Company</header> 
-                      <a class="link link-hover opacity-60">About us</a>
-                      <a class="link link-hover opacity-60">Leadership</a>
-                      <a class="link link-hover opacity-60">Careers</a>
-                      <a class="link link-hover opacity-60">News and article</a>
-                      <a class="link link-hover opacity-60">Legal Notice</a>
-                    </nav> 
-                    <nav>
-                      <header class="footer-title font-extrabold">Support</header> 
-                      <a class="link link-hover opacity-60">Help Center</a>
-                      <a class="link link-hover opacity-60">FAQ</a>
-                      <a class="link link-hover opacity-60">Ticket Support</a>
-                      <a class="link link-hover opacity-60">Contact Us</a>
-                    </nav>
-                    <nav>
-                        <header class="footer-title font-extrabold">Service</header> 
-                        <a class="link link-hover opacity-60">Academy</a>
-                        <a class="link link-hover opacity-60">Group Lesson</a>
-                        <a class="link link-hover opacity-60">Private Lesson</a>
-                        <a class="link link-hover opacity-60">Hocky for Kids</a>
-                        <a class="link link-hover opacity-60">Hocky for adult</a>
-                      </nav>  
+        <div class="mx-auto ">
+            <div class="grid gap-10 lg:gap-36 grid-cols-2 lg:grid-cols-4 p-10  text-base-content text-white">
+                <nav class="col-span-2 lg:col-span-1  mx-auto text-center lg:text-start">
+                    <header class="footer-title font-extrabold ">Get In Touch</header>
+                    <p class="opacity-60">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat
+                        dolor. Purus <br> urna in sit nullam proin.</p>
+                    <div><i class="fa-regular fa-envelope text-red-300"></i><a
+                            class="ml-3 link link-hover opacity-60 ">hockeys@support.co</a></div>
+                    <div><i class="fa-solid fa-phone text-red-400"></i><a class="ml-3 link link-hover opacity-60">(+62)
+                            123-321-543</a></div>
 
-                </div>
+
+                </nav>
+                <nav class="mx-auto w-28 text-center lg:text-start">
+                    <header class="footer-title font-extrabold">Company</header>
+                    <a class="link link-hover opacity-60">About us</a>
+                    <a class="link link-hover opacity-60">Leadership</a>
+                    <a class="link link-hover opacity-60">Careers</a>
+                    <a class="link link-hover opacity-60">News and article</a>
+                    <a class="link link-hover opacity-60">Legal Notice</a>
+                </nav>
+                <nav class="mx-auto w-28 text-center lg:text-start">
+                    <header class="footer-title font-extrabold">Support</header>
+                    <a class="link link-hover opacity-60">Help Center</a>
+                    <a class="link link-hover opacity-60">FAQ</a>
+                    <a class="link link-hover opacity-60">Ticket Support</a>
+                    <a class="link link-hover opacity-60">Contact Us</a>
+                </nav>
+                <nav class="col-span-2 lg:col-span-1 mx-auto text-center lg:text-start w-32">
+                    <header class="footer-title font-extrabold">Service</header>
+                    <a class="link link-hover opacity-60">Academy</a>
+                    <a class="link link-hover opacity-60">Group Lesson</a>
+                    <a class="link link-hover opacity-60">Private Lesson</a>
+                    <a class="link link-hover opacity-60">Hocky for Kids</a>
+                    <a class="link link-hover opacity-60">Hocky for adult</a>
+                </nav>
+
             </div>
-                      <div class="footer footer-center p-4  text-base-content text-white opacity-60">
-                        <aside>
-                          <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
-                        </aside>
-                      </div>
-                    </div>
+        </div>
+        <div class="footer footer-center p-4  text-base-content text-white opacity-60">
+            <aside>
+                <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+            </aside>
+        </div>
+        </div>
 
 
 
     </footer>
-             <!-- footer end -->
+    <!-- footer end -->
 </body>
 
 </html>
